@@ -1,0 +1,13 @@
+{
+    "colors":{
+        "background":"#010101",
+        "background2":"#101010",
+        "main":"#8257e5",
+        "text":"#fdfdfd",
+        "subtext":"#737380"
+    },
+    "fonts":{
+        "font1":"Megrim-Regular",
+        "font2":"CaesarDressing-Regular"
+    }
+}
