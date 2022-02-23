@@ -10,6 +10,7 @@ LogBox.ignoreLogs([
 //components
 import Home from './views/Home';
 import Levels from './views/Levels';
+import Level from './views/Level';
 
 const Stack = createStackNavigator();
 
@@ -28,6 +29,14 @@ const App = () =>{
         <Stack.Screen
           name="Levels"
           component={Levels}
+          options={{
+            //disable top header
+            headerShown: false
+          }}
+        />
+        <Stack.Screen
+          name="Level"
+          component={Level}
           options={{
             //disable top header
             headerShown: false

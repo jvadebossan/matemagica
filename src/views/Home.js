@@ -38,7 +38,6 @@ const Home = ({navigation}) =>{
       <ImgBox onPress={() => navigation.navigate('Levels')}>
         <Img source={play}/>
       </ImgBox>
-      
     </Container>
   )
 }
