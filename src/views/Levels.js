@@ -35,7 +35,7 @@ const LevelsBox = styled.View`
   padding: 30px;
 `
 
-const LevelBox = styled.View`
+const LevelBox = styled.TouchableOpacity`
   width: 100px;
   height: 65px;
   border-radius: 10px;
@@ -52,7 +52,7 @@ const LevelText = styled.Text`
   font-family: ${cfg.fonts.font2};
 `
 
-const LevelRelative = styled.View`
+const LevelRelative = styled.TouchableOpacity`
   width: 100px;
   height: 65px;
   border-radius: 10px;
@@ -82,7 +82,7 @@ const LevelRel = (props) => {
 }
 
 
-const Levels = (navigation) =>{
+const Levels = ({navigation}) =>{
   return(
     <Container>
       <Title>Levels</Title>
