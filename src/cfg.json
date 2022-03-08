@@ -2,6 +2,7 @@
     "colors":{
         "background":"#010101",
         "background2":"#101010",
+        "background3":"#202020",
         "main":"#8257e5",
         "text":"#fdfdfd",
         "subtext":"#737380"

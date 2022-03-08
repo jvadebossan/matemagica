@@ -2,7 +2,9 @@ import styled from 'styled-components'
 import React from 'react';
 
 import cfg from '../cfg.json'
-const play = require('../images/play_btn.png') 
+const play = require('../images/play_btn.png')
+
+import Popup from '../components/Popup'
 
 const Container = styled.SafeAreaView`
   width: 100%;
@@ -14,13 +16,12 @@ const Container = styled.SafeAreaView`
   align-items: center;
 `
 const Logo = styled.Text`
-  font-size: 60px;
+  font-size: 50px;
   color: ${cfg.colors.main};
   font-family: ${cfg.fonts.font1};
   margin-top: 70px;
   text-align: center;
 `
-
 const ImgBox = styled.TouchableOpacity`
   width: 160px;
   height: 160px;
@@ -31,15 +32,17 @@ const Img = styled.Image`
   height: 100%;
 `
 
-const Home = ({navigation}) =>{
-  return(
-    <Container>
-      <Logo>MathMagic</Logo>
-      <ImgBox onPress={() => navigation.navigate('Levels')}>
-        <Img source={play}/>
-      </ImgBox>
-    </Container>
-  )
+const Home = ({ navigation }) => {
+	return (
+		<Container>
+			<Logo>MateMagica</Logo>
+			<ImgBox onPress={() => navigation.navigate('Levels')}>
+				<Img source={play} />
+			</ImgBox>
+      <Popup show="flex" text="Bem vindo ao jogo. Selecione um level e siga o tutorial para poder jogar!"/>
+		</Container>
+      
+	)
 }
 
 export default Home
