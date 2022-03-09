@@ -12,6 +12,7 @@ import Home from './views/Home';
 import Levels from './views/Levels';
 import Level from './views/Level';
 import Passed from './views/Passed';
+import Win from './views/Win';
 
 import {createContext} from 'react'
 
@@ -52,6 +53,14 @@ const App = () => {
 					<Stack.Screen
 						name="Passed"
 						component={Passed}
+						options={{
+							//disable top header
+							headerShown: false
+						}}
+					/>
+					<Stack.Screen
+						name="Win"
+						component={Win}
 						options={{
 							//disable top header
 							headerShown: false

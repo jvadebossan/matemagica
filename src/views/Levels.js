@@ -62,11 +62,11 @@ const Levels = ({ navigation, route }) => {
 			<Title>Levels</Title>
 			<LevelsBox>
           <Level num="1" conta="10³" frases={['Nessa fase você irá realizar potências de numeros inteiros', 'Parabéns! Dica: potências de base 10 apenas adicionam a mesma quantidade de zeros do expoente, ou seja 10³ é 1 mais 3 zeros.']} list={[30,100,3,300,1000,10]} navigation={navigation}></Level>
-          <Level num="2" conta="2-¹" frases={['Nessa fase você irá realizar potências com expoentes negativos', 'Parabéns! Expoentes negativos fazem que os denominadores subam e os numeradores desçam.']} list={[0.5,2,-2,2.5,1.5,0]} navigation={navigation}></Level>
+          <Level num="2" conta="2-¹" frases={['Nessa fase você irá realizar potências com expoentes negativos', 'Parabéns! Expoentes negativos fazem com que a fração(qualquer número inteiro é uma fração de base 1) seja invertida.']} list={[0.5,2,-2,2.5,1.5,0]} navigation={navigation}></Level>
           <Level num="3" conta="(6²)⁴" frases={['Nessa fase você irá realizar multiplicação de potências', 'Parabéns: quando os expoentes se encontram dessa forma eles se multiplicam, mas eles podem se encontrar sem os parênteses. Assim, irão se tornar expoentes de expoentes.']} list={['6⁶','6⁸','6⁴','6²','6⁻²','6¹⁶']} navigation={navigation}></Level>
           <Level num="4" conta="3³/3" frases={['Nessa fase você irá realizar divisão de expoêntes de bases iguais', 'Parabéns! Ao dividir potências de bases iguais, você deve subtrair os expoentes.']} list={[3,"3²","3³","3⁴","-3","3⁻³"]} navigation={navigation}></Level>
-          <Level num="5" conta="(7x7)³" frases={['Lembre-se de usar a regra do chuveiro', 'Parabéns! Dica: a regra do chuveirinho também funciona com expoentes.']} list={["7³","7⁷","14³","21²","7⁶","7"]} navigation={navigation}></Level>
-          <Level num="6" conta="3²x9³" frases={['Hora de fatorar', 'Parabéns! Fatorando os expoentes e fazendo a regra do chuveirinho você pode resolver varias contas complicadas. Sempre veja se é possivel fatorar.']} list={["12⁵","27⁵","3⁸","9⁴","3⁹","9⁵"]} navigation={navigation}></Level>
+          <Level num="5" conta="(7x7)³" frases={['Lembre-se de usar a regra distrubutiva com os expoentes', 'Parabéns! Dica: a regra distributiva também funciona com expoentes.']} list={["7³","7⁷","14³","21²","7⁶","7"]} navigation={navigation}></Level>
+          <Level num="6" conta="3²x9³" frases={['Hora de fatorar', 'Parabéns! Fatorando os expoentes e fazendo a regra distributiva você pode resolver varias contas complicadas. Sempre veja se é possivel fatorar.']} list={["12⁵","27⁵","3⁸","9²","3⁹","9⁵"]} navigation={navigation}></Level>
 			</LevelsBox>
 		</Container>
 	)

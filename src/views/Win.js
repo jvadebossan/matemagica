@@ -53,23 +53,33 @@ const OkText = styled.Text`
     text-align: center;
 `
 
-const Passed = ({route}) => {
+
+const Title = styled.Text`
+  font-size: 60px;
+  color: ${cfg.colors.main};
+  font-family: ${cfg.fonts.font2};
+  margin: 10px 0px;
+  position: absolute;
+`
+const Confete = styled.Image`
+    width: 100%;
+    height: 100%;
+`
+
+const Win = ({route}) => {
     const navigation = useNavigation()
-    if(route.params.message == 'GAME OVER'){
-        const rootStore = useContext(RootContext)
-        const {reset} = rootStore.HeartStore
-        reset()
-    }
     return(
         <Container>
+            <Title>Parabéns</Title>
+            <Confete source={require('../images/confete.gif')}/>
             <Bg>
-                <Text>{route.params.message}</Text>
-                <Ok onPress={()=>{navigation.navigate('Levels')}}>
-                    <OkText>Ok</OkText>
+                <Text>Muito bem você completou o jogo. Agora pode revisar quantas vezes quiser e sempre usar de base para estudar</Text>
+                <Ok onPress={()=>{navigation.navigate('Home')}}>
+                    <OkText>voltar</OkText>
                 </Ok>
             </Bg>
         </Container>
     )
 }
 
-export default observer(Passed)
+export default observer(Win)

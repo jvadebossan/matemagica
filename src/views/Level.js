@@ -122,7 +122,11 @@ const Btns = (props) => {
         let correct = answ[props.level_num]
         if(num == correct){
             console.log('acertou')
-            nav.navigate('Passed', {message:props.message})
+            if(props.level_num != 6){
+                nav.navigate('Passed', {message:props.message})
+                return
+            }
+            nav.navigate('Win')
         }else{
             let hearts = props.stores.hearts
             let increment = props.stores.increment
